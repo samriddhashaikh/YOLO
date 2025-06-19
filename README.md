@@ -42,12 +42,12 @@ YOLO/
 ---
 ## 🖼 Data Creation Screenshot
 ![Labe Studio Interface](assets/Image%20Annotation_Label_Studio.png)
-![Image Annotation - Example-1](assets/Image Annotation_Label_Studio_1.png)
-![Image Annotation - Example-2](assets/Image Annotation_Label_Studio_2.png)
-![Image Annotation - Example-3](assets/Image Annotation_Label_Studio_3.png)
-![Image Annotation - Example-4](assets/Image Annotation_Label_Studio_4.png)
-![Image Annotation - Example-5](assets/Image Annotation_Label_Studio_5.png)
-![Image Annotation - Example-6](assets/Image Annotation_Label_Studio_6.png)
+![Image Annotation - Example-1](assets/Image%20Annotation_Label_Studio_1.png)
+![Image Annotation - Example-2](assets/Image%20Annotation_Label_Studio_2.png)
+![Image Annotation - Example-3](assets/Image%20Annotation_Label_Studio_3.png)
+![Image Annotation - Example-4](assets/Image%20Annotation_Label_Studio_4.png)
+![Image Annotation - Example-5](assets/Image%20Annotation_Label_Studio_5.png)
+![Image Annotation - Example-6](assets/Image%20Annotation_Label_Studio_6.png)
 
 ---
 
