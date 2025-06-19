@@ -50,14 +50,44 @@ YOLO/
 ![Image Annotation - Example-6](assets/Image%20Annotation_Label_Studio_6.png)
 
 ---
+## Organizing Data 
+## Unzip the YOLO_Data.zip file in `custom_data` directory.
+![Orgamizing Data](assets/1.png)
 
+## Organize data in `data` directory having two separate subfolders named `train` and `validation`.
+![Orgamizing Data](assets/2.png)
+
+## Create `data.yaml` file.
+![Orgamizing Data](assets/3.png)
+
+---
+## Installations
+![Install Ultralytics](assets/4.png)
+
+---
+## Model Architecture
+![YOLO Model Architecture](assets/5.png)
+
+---
+## Model Training
+![Training](assets/7.png)
+
+---
 ## 📊 Sample Metrics
-![Training Metrics](assets/Trained_Model.png)
+![Training Metrics](assets/8.png)
 ![Training Metrics](assets/Training_Metrics_Screenshot.png)
+---
 
 ## Save the Trained Model
-![Training Metrics](assets/Training_Metrics_Screenshot.png)
-![Training Metrics](assets/Training_Metrics_Screenshot.png)
+![Best Trained Model](assets/10.png)
+![Trained Model Files](assets/11.png)
+---
+
+## Test the Trained Model
+![Test the Model](assets/12.png)
+![Test Results  - Example-1](assets/13.png)
+![Test Results - Example-2](assets/14.png)
+
 
 ---
 ## 📄 License
