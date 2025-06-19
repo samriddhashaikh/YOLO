@@ -72,8 +72,10 @@ def main():
 
     # Initialize YOLOModel Detector
     # If running from the Laptop
-    #detector = YOLOModel(model_dir="yolov8n.pt", input_size=640) 
+    #detector = YOLOModel(model_dir="yolo11n.pt", input_size=640) 
+
     # If running from a Raspberry-Pi board
+    # Make sure to run the `pt2ncnn.py` script to convert the `yolo11n.pt` to the ncnn format this will generate a directory named `yolo11n_ncnn_model` with the necessary files. 
     detector = YOLOModel(model_dir="yolo11n_ncnn_model", input_size=640)
 
     # If running from a Raspberry-Pi board
