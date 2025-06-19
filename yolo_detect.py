@@ -26,8 +26,8 @@ def capture_frames(cap):
         with frame_lock:
             current_frame = frame.copy()
 
-# --- YOLOv8n Inference Class ---
-class YOLOv8nNCNN:
+# --- YOLOModel Inference Class ---
+class YOLOModel:
     def __init__(self, model_dir, input_size=640):
         self.model = YOLO(model_dir, task='detect')
         self.input_size = input_size
@@ -70,10 +70,14 @@ class YOLOv8nNCNN:
 def main():
     global running
 
-    # Initialize YOLOv8n Detector
-    #detector = YOLOv8nNCNN(model_dir="yolov8n.pt", input_size=640)
-    # detector = YOLOv8nNCNN(model_dir="yolov8n_ncnn_model", input_size=640)
-    detector = YOLOv8nNCNN(model_dir="yolo11n_ncnn_model", input_size=640)
+    # Initialize YOLOModel Detector
+    # If running from the Laptop
+    #detector = YOLOModel(model_dir="yolov8n.pt", input_size=640) 
+    # If running from a Raspberry-Pi board
+    detector = YOLOModel(model_dir="yolo11n_ncnn_model", input_size=640)
+
+    # If running from a Raspberry-Pi board
+    #detector = YOLOModel(model_dir="yolo11n.pt", input_size=640)
 
     # Open USB camera
     cap = cv2.VideoCapture(0)
