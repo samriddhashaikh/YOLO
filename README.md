@@ -4,7 +4,7 @@
 YOLO (You Only Look Once) is a Deep Convolutional Neural Network that performs object detection from images.
 
 It solves two problems - 
-1. A Classification problem - to idenfify the type of object (e.g. car, person, auto, traffic lights, etc.) - Preditcs class labels with a confidence score.
+1. A Classification problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Preditcs class labels with a confidence score.
 2. A Regression problem - it localizes the detected object with a bounding box in the image (e.g. finds the location of the object in the entire image). - Predicts the location of the bounding box - (x,y) coordinate of the centre of the bounding box along with the width and height of the bounding box.
 
 
@@ -14,8 +14,8 @@ It solves two problems -
 
 # Model Training
 3. Download a pre-trained YOLO model (e.g. Yolov11) from Ultralytics.
-4. Train the Yolo model on Google Colab wuth GPU (Graphics Processing Unit, T4 GPU)
-5. Save and download the newly trained Yolo model.
+4. Train the Yolo model on Google Colab with GPU (Graphics Processing Unit, T4 GPU)
+5. Save and download the newly trained YOLO model.
 
 # Deployment
 6. Download the model on Raspberry-Pi-5.
@@ -30,9 +30,9 @@ It solves two problems -
 YOLO/
 ├── camera_capture.py           # Script to capture image/video for model training.
 ├── pt2ncnn.py                  # Convert a .pt YOLO model to the NCNN format.
-├── train_val_split.py          # Sctipt to split the data into training and validation sets.
-├── yolo_detect.py              # Main script to run the YOLO obhect detection application
-├── yolo11n.pt                  # Trained Yolo model in pytorch format (.pt).
+├── train_val_split.py          # Script to split the data into training and validation sets.
+├── yolo_detect.py              # Main script to run the YOLO object detection application
+├── yolo11n.pt                  # Trained YOLO model in pytorch format (.pt).
 ├── my_model.zip                # Trained model with all artifacts.
 ├── requirements.txt            # Required Python packages
 ├── ReadMe.md                   # Project Description.
@@ -41,7 +41,7 @@ YOLO/
 
 ---
 ## 🖼 Data Creation Screenshot
-![Labe Studio Interface](assets/Image%20Annotation_Label_Studio.png)
+![Label Studio Interface](assets/Image%20Annotation_Label_Studio.png)
 ![Image Annotation - Example-1](assets/Image%20Annotation_Label_Studio_1.png)
 ![Image Annotation - Example-2](assets/Image%20Annotation_Label_Studio_2.png)
 ![Image Annotation - Example-3](assets/Image%20Annotation_Label_Studio_3.png)
