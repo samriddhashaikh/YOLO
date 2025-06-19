@@ -4,7 +4,7 @@
 YOLO (You Only Look Once) is a Deep Convolutional Neural Network that performs object detection from images.
 
 It solves two problems - 
-1. A Classification problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Preditcs class labels with a confidence score.
+1. A Classification problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Predicts class labels with a confidence score.
 2. A Regression problem - it localizes the detected object with a bounding box in the image (e.g. finds the location of the object in the entire image). - Predicts the location of the bounding box - (x,y) coordinate of the centre of the bounding box along with the width and height of the bounding box.
 
 
