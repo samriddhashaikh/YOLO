@@ -1,6 +1,6 @@
 # YOLO
 
-# Object detection with YOLO 
+# Object Detection with YOLO 
 YOLO (You Only Look Once) is a Deep Convolutional Neural Network that performs object detection from images.
 
 It solves two problems - 
