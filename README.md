@@ -53,6 +53,11 @@ YOLO/
 
 ## 📊 Sample Metrics
 ![Training Metrics](assets/Trained_Model.png)
+![Training Metrics](assets/Training_Metrics_Screenshot.png)
+
+## Save the Trained Model
+![Training Metrics](assets/Training_Metrics_Screenshot.png)
+![Training Metrics](assets/Training_Metrics_Screenshot.png)
 
 ---
 
