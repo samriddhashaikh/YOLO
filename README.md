@@ -22,5 +22,22 @@ It solves two problems -
 7. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has).
 8. Run the optimized model on the Raspberry-Pi.
 
+
+---
+## 🗂️ Project Structure
+
+```
+YOLO/
+├── camera_capture.py           # Script to capture image/video for model training.
+├── pt2ncnn.py                  # Convert a .pt YOLO model to the NCNN format.
+├── train_val_split.py          # Sctipt to split the data into training and validation sets.
+├── yolo_detect.py              # Main script to run the YOLO obhect detection application
+├── yolo11n.pt                  # Trained Yolo model in pytorch format (.pt).
+├── my_model.zip                # Trained model with all artifacts.
+├── requirements.txt            # Required Python packages
+├── ReadMe.md                   # Project Description.
+
+```
+
  
  
