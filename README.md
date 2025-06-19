@@ -75,16 +75,21 @@ YOLO/
 ---
 ## 📊 Sample Metrics
 ![Training Metrics](assets/8.png)
-![Training Metrics](assets/Training_Metrics_Screenshot.png)
----
 
+## Training/Validation Loss/Accuracy/mAP/Precision/Recall
+![Training Metrics](assets/Training_Metrics_Screenshot.png)
+
+---
 ## Save the Trained Model
 ![Best Trained Model](assets/10.png)
+
 ![Trained Model Files](assets/11.png)
 ---
 
 ## Test the Trained Model
 ![Test the Model](assets/12.png)
+
+## Model Inference Results
 ![Test Results  - Example-1](assets/13.png)
 ![Test Results - Example-2](assets/14.png)
 
