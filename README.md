@@ -60,6 +60,18 @@ YOLO/
 ![Training Metrics](assets/Training_Metrics_Screenshot.png)
 
 ---
+## 📄 License
+This project is open-sourced under the [MIT License](LICENSE).
+---
+
+## 🧠 Author
+Ms. Samriddha Shaikh  
+Student, Class-10, Amity International School, Sector-46, Gurgaon
+
+---
+## 📬 Contact
+For questions or suggestions, reach out to me at samriddha.shaikh@gmail.com 
+---
 
  
  
