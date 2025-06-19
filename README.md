@@ -40,7 +40,7 @@ YOLO/
 ```
 
 ---
-## 🖼 Data Creation Screenshot
+## 🖼 Data Creation/Annotation in Label Studio [Screenshot]
 ![Label Studio Interface](assets/Image%20Annotation_Label_Studio.png)
 ![Image Annotation - Example-1](assets/Image%20Annotation_Label_Studio_1.png)
 ![Image Annotation - Example-2](assets/Image%20Annotation_Label_Studio_2.png)
@@ -81,12 +81,12 @@ YOLO/
 
 ---
 ## Save the Trained Model
-![Best Trained Model](assets/10.png)
+![Best Performing Model](assets/10.png)
 
 ![Trained Model Files](assets/11.png)
 ---
 
-## Test the Trained Model
+## Test the Model
 ![Test the Model](assets/12.png)
 
 ## Model Inference Results
