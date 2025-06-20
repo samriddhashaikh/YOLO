@@ -17,7 +17,7 @@ https://www.raspberrypi.com/news/gpio-zero-a-friendly-python-api-for-physical-co
 
 ----------------------------------------------
 
-# gpiozero: Official GitHub Repository
+## gpiozero: Official GitHub Repository
 https://github.com/gpiozero/gpiozero
 
 ----------------------------------------------
