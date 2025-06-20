@@ -2,21 +2,22 @@
 YOLO (You Only Look Once) is a Deep Convolutional Neural Network that performs object detection from images.
 
 It solves two problems - 
-1. A Classification problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Predicts class labels with a confidence score.
-2. A Regression problem - it localizes the detected object with a bounding box in the image (e.g. finds the location of the object in the entire image). - Predicts the location of the bounding box - (x,y) coordinate of the centre of the bounding box along with the width and height of the bounding box.
+1. A **Classification** problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Predicts class labels with a confidence score.
+2. A **Regression** problem - it localizes the detected object with a bounding box in the image (e.g. finds the location of the object in the entire image). - Predicts the location of the bounding box - (x,y) coordinate of the centre of the bounding box along with the width and height of the bounding box.
 
-
-# Create a Custom Dataset
+---
+## Major Steps 
+### Step-1: Create a Custom Dataset
 1. Collect new images (car, auto, bus, traffic lights, person, etc.)
 2. Annotate images using a tool like **Label Studio**.
 3. Save your annotated data in a zip file `YOLO_Data.zip`
 
-# Model Training [`YOLO_Train.ipynb`]
+### Step-2: Model Training [`YOLO_Train.ipynb`]
 4. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
 5. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
 6. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
 
-# Deployment
+### Step-3: Deployment
 7. Download the model on Raspberry-Pi-5.
 8. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
 9. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
