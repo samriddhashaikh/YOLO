@@ -9,16 +9,17 @@ It solves two problems -
 # Create a Custom Dataset
 1. Collect new images (car, auto, bus, traffic lights, person, etc.)
 2. Annotate images using a tool like **Label Studio**.
+3. 3. Save your annotated data in a zip file `YOLO_Data.zip`
 
-# Model Training
-3. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
-4. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
-5. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
+# Model Training [`YOLO_Train.ipynb`]
+4. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
+5. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
+6. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
 
 # Deployment
-6. Download the model on Raspberry-Pi-5.
-7. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
-8. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
+7. Download the model on Raspberry-Pi-5.
+8. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
+9. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
 
 
 ---
@@ -84,11 +85,14 @@ python yolo_detect.py
 ```
 
 ## Note: 
-Steps 1, 2, 3, 5, 6 are to be run either from a Laptop or from a Raspberry-Pi board.
+Steps 1, 2, 3, 5, 6 are to be run either on a Laptop or a Raspberry-Pi board.
+
 Step 1, 2, 3 are required to setup the environment and do the installations.
-Step 4, 5 are required to run the application.
+
+Step 5, 6 are required to run the application.
 
 Step 4 is to be run on a Google Colab (or similar environment having a GPU access).
+
 ---
 
 ---
