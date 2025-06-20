@@ -29,6 +29,10 @@ It solves two problems -
 
 ```
 YOLO/
+│
+├── assets/                     # Static assets
+│   └── image files             # Images/screenshots of data collection, model training, training metrics and inference results.
+│
 ├── requirements.txt            # Required Python libraries/packages to be installed.
 ├── camera_capture.py           # Script to capture image/video for model training. Required during data collection.
 ├── YOLO_Train.ipynb            # IPython notebook to train the YOLO model. This will be run on a Google Colab environment having GPU accesss (e.g. T4 GPU).
