@@ -10,17 +10,17 @@ It solves two problems -
 
 # Create a Custom Dataset
 1. Collect new images (car, auto, bus, traffic lights, person, etc.)
-2. Annotate images using a tool like Label Studio.
+2. Annotate images using a tool like **Label Studio**.
 
 # Model Training
-3. Download a pre-trained YOLO model (e.g. Yolov11) from Ultralytics.
-4. Train the Yolo model on Google Colab with GPU (Graphics Processing Unit, T4 GPU)
-5. Save and download the newly trained YOLO model.
+3. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
+4. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
+5. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
 
 # Deployment
 6. Download the model on Raspberry-Pi-5.
-7. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has).
-8. Run the optimized model on the Raspberry-Pi.
+7. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
+8. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
 
 
 ---
@@ -45,7 +45,7 @@ YOLO/
 
 ### Run the following commands in the root project folder.
 
-### 1. Create a Virtual Environment
+### 1. Create a Virtual Environment [On the Raspberry-Pi][Setup]
 
 ```bash
 python -m venv yolo
@@ -58,22 +58,39 @@ python -m venv yolo
 yolo/Scripts/activate
 ```
 ```bash
-# On your Raspberry-Pi (running Raspberry Pi OS)
+# On your Raspberry-Pi (running Raspberry Pi OS) [On the Raspberry-Pi]
 source yolo/bin/activate
 ```
-
 ### 3. Install Requirements
+After the virtual environment has been activated, you need to install the necessary libraries.
 
 ```bash
 pip install -r requirements.txt
 ```
+### 4. Train the YOLO model
+Runs on the Google Colab platform.
+i. Check the IPython notebook, `YOLO_Train.ipynb`. This file is self contained.  
+ii. Upload your curated data filre `YOLO_Data.zip`. 
+iii. Run all the cells sequentially. 
+iv. After training is completed, a `yolov11.pt` file is created. Download this file and store it in the root project folder of the Raspberry-Pi board.
 
-### 4. Run The Application
+### 5. Convert the YOLO model from .pt to NCNN Format [On the Raspberry-Pi]
+You need to convert the `yolov11.pt` to `yolov11_ncnn_model` 
+```bash
+python pt2ncnn.py
+```
 
+### 6. Run The Application (Object detection with YOLO on realtime video) [On the Raspberry-Pi]
 ```bash
 python yolo_detect.py
 ```
 
+## Note: 
+Steps 1, 2, 3, 5, 6 are to be run either from a Laptop or from a Raspberry-Pi board.
+Step 1, 2, 3 are required to setup the environment and do the installations.
+Step 4, 5 are required to run the application.
+
+Step 4 is to be run on a Google Colab (or similar environment having a GPU access).
 ---
 
 ---
