@@ -9,7 +9,7 @@ It solves two problems -
 # Create a Custom Dataset
 1. Collect new images (car, auto, bus, traffic lights, person, etc.)
 2. Annotate images using a tool like **Label Studio**.
-3. 3. Save your annotated data in a zip file `YOLO_Data.zip`
+3. Save your annotated data in a zip file `YOLO_Data.zip`
 
 # Model Training [`YOLO_Train.ipynb`]
 4. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
