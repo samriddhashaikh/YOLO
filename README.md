@@ -28,9 +28,9 @@ It solves two problems -
 ```
 YOLO/
 ├── requirements.txt            # Required Python libraries/packages to be installed.
-├── camera_capture.py           # Script to capture image/video for model training. REquired during data collection.
+├── camera_capture.py           # Script to capture image/video for model training. Required during data collection.
 ├── YOLO_Train.ipynb            # IPython notebook to train the YOLO model. This will be run on a Google Colab environment having GPU accesss (e.g. T4 GPU).
-├── yolo11n.pt                  # Trained YOLO model in pytorch format PyTorch format (.pt).
+├── yolo11n.pt                  # Trained YOLO model in PyTorch format (.pt).
 ├── my_model.zip                # Trained model with all artifacts.
 ├── pt2ncnn.py                  # Convert a .pt YOLO model to the NCNN format. NCNN format is suitable for ARM processsors (as found in a Raspberry-Pi board).
 ├── yolo_detect.py              # Main script to run the YOLO object detection application.
@@ -50,7 +50,7 @@ YOLO/
 python -m venv yolo
 ```
 
-### 2. Activate the Virtual Environment
+### 2. Activate the Virtual Environment [Setup]
 
 ```bash
 # On your Laptop (Windows)
@@ -60,20 +60,20 @@ yolo/Scripts/activate
 # On your Raspberry-Pi (running Raspberry Pi OS) [On the Raspberry-Pi]
 source yolo/bin/activate
 ```
-### 3. Install Requirements
+### 3. Install Requirements [Setup]
 After the virtual environment has been activated, you need to install the necessary libraries.
 
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Train the YOLO model
+### 4. Train the YOLO model [YOLo model training on custom dataset]
 Runs on the Google Colab platform.
 i. Check the IPython notebook, `YOLO_Train.ipynb`. This file is self contained.  
 ii. Upload your curated data filre `YOLO_Data.zip`. 
 iii. Run all the cells sequentially. 
 iv. After training is completed, a `yolov11.pt` file is created. Download this file and store it in the root project folder of the Raspberry-Pi board.
 
-### 5. Convert the YOLO model from .pt to NCNN Format [On the Raspberry-Pi]
+### 5. Convert the YOLO model from .pt to NCNN Format [On the Raspberry-Pi] [Model conversion from .pt to NCNN format]
 You need to convert the `yolov11.pt` to `yolov11_ncnn_model` 
 ```bash
 python pt2ncnn.py
@@ -86,12 +86,10 @@ python yolo_detect.py
 
 ## Note: 
 Steps 1, 2, 3, 5, 6 are to be run either on a Laptop or a Raspberry-Pi board.
+ > Steps 1, 2, 3 are required to setup the environment and do the installations.
+ > Steps 5, 6 are required to run the application.
 
-Step 1, 2, 3 are required to setup the environment and do the installations.
-
-Step 5, 6 are required to run the application.
-
-Step 4 is to be run on a Google Colab (or similar environment having a GPU access).
+Step 4 is to be run independently on Google Colab (or similar environment having a GPU access).
 
 ---
 
