@@ -13,14 +13,15 @@ It solves two problems -
 3. Save your annotated data in a zip file `YOLO_Data.zip`
 
 ### Step-2: Model Training [`YOLO_Train.ipynb`]
-4. Download a pre-trained YOLO model (e.g. Yolov11) from **Ultralytics**. Check **Quick Start** Step 3.
-5. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
-6. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
+4. Open the IPython notebook. Upload your custom dataset (**YOLO_data.zip**) on Colab platform.
+5. Install **Ultralytics** and download a pre-trained YOLO model (e.g. yolo11n) from **Ultralytics**. Check **Quick Start** Step 3. Just run the corresponding cells in the IPython notebook.
+6. Train the YOLO model on **Google Colab** with GPU (Graphics Processing Unit, T4 GPU). Check **Quick Start** Step 4.
+7. Save and download the newly trained YOLO model (e.g., **yolo11n.pt**). Check **Quick Start** Step 4.
 
 ### Step-3: Deployment
-7. Download the model on Raspberry-Pi-5.
-8. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
-9. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
+8. Download the model on Raspberry-Pi-5.
+9. Convert the .pt model to NCNN format (optimized for the ARM CPUs like the one Raspberry-Pi has). Check **Quick Start** Step 5.
+10. Run the optimized model on the Raspberry-Pi. Check **Quick Start** Step 6.
 
 
 ---
@@ -155,12 +156,13 @@ This project is open-sourced under the [MIT License](LICENSE).
 ---
 
 ## 🧠 Author
-Ms. Samriddha Shaikh  
+**Ms. Samriddha Shaikh**  
 Student, Class-10, Amity International School, Sector-46, Gurgaon
 
 ---
 ## 📬 Contact
 For questions or suggestions, reach out to me at samriddha.shaikh@gmail.com 
+
 ---
 
  
