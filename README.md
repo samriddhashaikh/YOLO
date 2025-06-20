@@ -167,7 +167,4 @@ Student, Class-10, Amity International School, Sector-46, Gurgaon
 ## 📬 Contact
 For questions or suggestions, reach out to me at samriddha.shaikh@gmail.com 
 
----
-
- 
- 
+--- 
