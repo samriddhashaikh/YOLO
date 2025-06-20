@@ -28,16 +28,53 @@ It solves two problems -
 
 ```
 YOLO/
-├── camera_capture.py           # Script to capture image/video for model training.
-├── pt2ncnn.py                  # Convert a .pt YOLO model to the NCNN format.
-├── train_val_split.py          # Script to split the data into training and validation sets.
-├── yolo_detect.py              # Main script to run the YOLO object detection application
-├── yolo11n.pt                  # Trained YOLO model in pytorch format (.pt).
+├── requirements.txt            # Required Python libraries/packages to be installed.
+├── camera_capture.py           # Script to capture image/video for model training. REquired during data collection.
+├── YOLO_Train.ipynb            # IPython notebook to train the YOLO model. This will be run on a Google Colab environment having GPU accesss (e.g. T4 GPU).
+├── yolo11n.pt                  # Trained YOLO model in pytorch format PyTorch format (.pt).
 ├── my_model.zip                # Trained model with all artifacts.
-├── requirements.txt            # Required Python packages
+├── pt2ncnn.py                  # Convert a .pt YOLO model to the NCNN format. NCNN format is suitable for ARM processsors (as found in a Raspberry-Pi board).
+├── yolo_detect.py              # Main script to run the YOLO object detection application.
 ├── ReadMe.md                   # Project Description.
 
 ```
+
+---
+
+## 🚀 Quickstart
+
+### Run the following commands in the root project folder.
+
+### 1. Create a Virtual Environment
+
+```bash
+python -m venv yolo
+```
+
+### 2. Activate the Virtual Environment
+
+```bash
+# On your Laptop (Windows)
+yolo/Scripts/activate
+```
+```bash
+# On your Raspberry-Pi (running Raspberry Pi OS)
+source yolo/bin/activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run The Application
+
+```bash
+python yolo_detect.py
+```
+
+---
 
 ---
 ## 🖼 Data Creation/Annotation in Label Studio [Screenshot]
