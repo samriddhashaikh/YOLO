@@ -73,7 +73,7 @@ After the virtual environment has been activated, you need to install the necess
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Train the YOLO model [YOLo model training on custom dataset]
+### 4. Train the YOLO model [on custom dataset]
 Runs on the Google Colab platform.
 i. Check the IPython notebook, `YOLO_Train.ipynb`. This file is self contained.  
 ii. Upload your curated data filre `YOLO_Data.zip`. 
