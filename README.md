@@ -1,6 +1,6 @@
 # 🚦 AI-powered Adaptive Traffic Control for Smart Cities 🏙️
 
-AI model - YOLO (You Only Look Once) is a Deep Convolutional Neural Network that performs object detection from images.
+AI model - **YOLO (You Only Look Once)** is a Deep Convolutional Neural Network that performs object detection from images.
 
 It solves two problems - 
 1. A **Classification** problem - to identify the type of object (e.g. car, person, auto, traffic lights, etc.) - Predicts class labels with a confidence score.
