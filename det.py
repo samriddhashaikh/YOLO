@@ -15,8 +15,7 @@ import threading
 import time
 from ultralytics import YOLO
 from gpiozero import LED
-from machine import I2C, Pin
-from lcd1602 import LCD
+from RPLCD.i2c import CharLCD
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #--------------------------------------------------------
@@ -89,14 +88,17 @@ class LEDController:
 #-------------------------------------------------
 class I2C2x16LCD:
     def __init__(self):
-        # I2C connection on GPIO2 (SDA, BOARD 3), GPIO3 (SCL, BOARD 5)
-        self.i2c = I2C(1, scl=Pin(3), sda=Pin(2))
-        self.lcd = LCD(self.i2c, addr=0x27)
-
+        # Initialize I2C LCD display
+        # I2C-1 bus on Raspberry Pi: SDA = GPIO2 (Pin 3), SCL = GPIO3 (Pin 5)
+        # Initialize LCD (using PCF8574 I2C backpack, common address is 0x27)
+        self.lcd = CharLCD('PCF8574', address=0x27, port=1, cols=16, rows=2)
+        
     def display_timers(self, t1, t2):
         self.lcd.clear()
-        self.lcd.write(0, 0, f"Lane-1: {t1:>3}s")
-        self.lcd.write(1, 0, f"Lane-2: {t2:>3}s")
+        self.lcd.cursor_pos = (0,0)
+        self.lcd.write_string(f"Lane-1: {t1:>3}s")
+        self.lcd.cursor_pos = (1,0)
+        self.lcd.write_string(f"Lane-2: {t2:>3}s")
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #---------------------------------------
